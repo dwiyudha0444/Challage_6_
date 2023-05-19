@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Ch5_MovieDB</string>
+    <string name="tv_pass">Kata Sandi</string>
+    <string name="tv_email">Email</string>
+    <string name="tv_login">Masuk</string>
+    <string name="tv_not">Tidak punya akun</string>
+    <string name="tv_profile">Profil</string>
+    <string name="tv_username">Nama Pengguna</string>
+    <string name="tv_fullname">Nama Panjang</string>
+    <string name="tv_date">Tanggal</string>
+    <string name="tv_address">Alamat</string>
+    <string name="tv_update">Ubah</string>
+    <string name="tv_logout">Keluar</string>
+    <string name="tv_register">Daftar</string>
+    <string name="tv_pass2">Konfirmasi Password</string>
+</resources>

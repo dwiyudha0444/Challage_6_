@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Ch5_MovieDB</string>
+    <string name="tv_pass">パスワード</string>
+    <string name="tv_email">Eメール</string>
+    <string name="tv_login">入力</string>
+    <string name="tv_not">アカウントを持っていません</string>
+    <string name="tv_profile">プロフィール</string>
+    <string name="tv_username">ユーザー名</string>
+    <string name="tv_fullname">フルネーム</string>
+    <string name="tv_date">日にち</string>
+    <string name="tv_address">住所</string>
+    <string name="tv_update">変化</string>
+    <string name="tv_logout">外出</string>
+    <string name="tv_register">リスト</string>
+    <string name="tv_pass2">パスワードを認証する</string>
+</resources>

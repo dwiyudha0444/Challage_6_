@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "816154994085",
+    "project_id": "cal5mov",
+    "storage_bucket": "cal5mov.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:816154994085:android:1169f3d7b5bac16e36344c",
+        "android_client_info": {
+          "package_name": "com.dwiyu.ch5_moviedb"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "816154994085-2d8o2fek1n35tddnb2vkkkeqd4dc78m3.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.dwiyu.ch5_moviedb",
+            "certificate_hash": "3133e8a983f7f082bc9f4721886f066b485275da"
+          }
+        },
+        {
+          "client_id": "816154994085-vacaobsfdbo186kcpne18gj64qgii6g0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAuCe_YjcjfNVqwYM8tSC22PaH4FGctkHk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "816154994085-vacaobsfdbo186kcpne18gj64qgii6g0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
