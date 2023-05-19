@@ -10,9 +10,6 @@ interface FavDAO {
     @Query("SELECT * FROM DataFav")
     fun getAllFavorite() : List<DataFav>
 
-    @Query("SELECT EXISTS(SELECT id FROM DataFav WHERE id = :id)")
-    fun isFavoriteMovie(id : Int) : Boolean
-
     @Insert
     fun addFavorite(favoriteMovie: DataFav)
 

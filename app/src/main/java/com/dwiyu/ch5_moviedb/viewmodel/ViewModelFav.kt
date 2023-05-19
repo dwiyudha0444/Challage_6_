@@ -18,7 +18,7 @@ class ViewModelFav @Inject constructor(val db: FavDAO) : ViewModel() {
     private val _ListMovie: MutableLiveData<List<DataFav>> = MutableLiveData()
     val listMovie: LiveData<List<DataFav>> get() = _ListMovie
 
-    
+
 
     fun getAllFav() {
         GlobalScope.launch {

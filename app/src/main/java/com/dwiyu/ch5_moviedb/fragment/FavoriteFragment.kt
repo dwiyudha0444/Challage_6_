@@ -21,7 +21,7 @@ class FavoriteFragment : Fragment() {
     private lateinit var viewModel: ViewModelFav
     private var _binding: FragmentFavoriteBinding? = null
     private val binding get() = _binding!!
-    private var mDbFav: FavDB? = null
+    private var FavDB: FavDB? = null
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -34,7 +34,6 @@ class FavoriteFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-//        viewModel = ViewModelProvider(this)[ViewModelFavoriteMovie::class.java]
         viewModel = ViewModelProvider(this)[ViewModelFav::class.java]
         getAllFav()
     }
