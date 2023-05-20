@@ -1,3 +1,5 @@
+@file:Suppress("PrivatePropertyName")
+
 package com.dwiyu.ch5_moviedb.viewmodel
 
 import androidx.lifecycle.LiveData
@@ -10,8 +12,9 @@ import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch
 import javax.inject.Inject
 
+@Suppress("PrivatePropertyName")
 @HiltViewModel
-class ViewModelFav @Inject constructor(val db: FavDAO) : ViewModel() {
+class ViewModelFav @Inject constructor(private val db: FavDAO) : ViewModel() {
     private val _movie: MutableLiveData<DataFav> = MutableLiveData()
     val movie: LiveData<DataFav> get() = _movie
 
@@ -23,13 +26,6 @@ class ViewModelFav @Inject constructor(val db: FavDAO) : ViewModel() {
     fun getAllFav() {
         GlobalScope.launch {
             _ListMovie.postValue(db.getAllFavorite())
-        }
-    }
-
-    fun deleteFavMovie(favMovie: DataFav) {
-        GlobalScope.launch {
-            db.deleteFavorite(favMovie)
-            _movie.postValue(favMovie)
         }
     }
 

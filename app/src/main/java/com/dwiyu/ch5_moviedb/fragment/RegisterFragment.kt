@@ -17,12 +17,12 @@ import dagger.hilt.android.AndroidEntryPoint
 @AndroidEntryPoint
 class RegisterFragment : Fragment() {
     lateinit var binding: FragmentRegisterBinding
-    lateinit var sharedRegis: SharedPreferences
-    lateinit var firebaseAuth: FirebaseAuth
+    private lateinit var sharedRegis: SharedPreferences
+    private lateinit var firebaseAuth: FirebaseAuth
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         // Inflate the layout for this fragment
         binding = FragmentRegisterBinding.inflate(inflater, container, false)
         return binding.root
@@ -37,12 +37,12 @@ class RegisterFragment : Fragment() {
         firebaseAuth = FirebaseAuth.getInstance()
 
         binding.btnDaftar.setOnClickListener {
-            var getUsername = binding.etUsernameregister.text.toString()
-            var getEmail = binding.etEmailregister.text.toString()
-            var getPass = binding.etPasswordregister.text.toString()
-            var getRepeatPass = binding.etPasswordregister.text.toString()
+            val getUsername = binding.etUsernameregister.text.toString()
+            val getEmail = binding.etEmailregister.text.toString()
+            val getPass = binding.etPasswordregister.text.toString()
+            val getRepeatPass = binding.etPasswordregister.text.toString()
 
-            var addUser = sharedRegis.edit()
+            val addUser = sharedRegis.edit()
             addUser.putString("user", getUsername)
 
             if (getUsername.isNotEmpty()&& getEmail.isNotEmpty() && getPass.isNotEmpty() && getRepeatPass.isNotEmpty()){

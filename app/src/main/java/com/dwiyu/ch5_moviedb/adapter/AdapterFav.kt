@@ -1,3 +1,8 @@
+@file:Suppress("unused", "unused", "unused", "unused", "unused", "unused", "unused", "unused",
+    "unused", "unused", "unused", "unused", "unused", "unused", "unused", "unused", "unused",
+    "unused", "unused", "unused", "unused", "unused", "unused", "unused", "unused"
+)
+
 package com.dwiyu.ch5_moviedb.adapter
 
 import android.os.Bundle
@@ -10,6 +15,10 @@ import com.dwiyu.ch5_moviedb.R
 import com.dwiyu.ch5_moviedb.databinding.ItemFavBinding
 import com.dwiyu.ch5_moviedb.room.DataFav
 
+@Suppress("unused", "unused", "unused", "unused", "unused", "unused", "unused", "unused", "unused",
+    "unused", "unused", "unused", "unused", "unused", "unused", "unused", "unused", "unused",
+    "unused"
+)
 class AdapterFav(private val listMovie: List<DataFav>) :
     RecyclerView.Adapter<AdapterFav.ViewHolder>() {
 
@@ -17,18 +26,16 @@ class AdapterFav(private val listMovie: List<DataFav>) :
     class ViewHolder(var binding: ItemFavBinding) :
         RecyclerView.ViewHolder(binding.root) {
         fun bindFilms(movie: DataFav) {
-            with(itemView) {
-                binding.apply {
-                    binding.filmfav = movie
-                    Glide.with(itemView.context)
-                        .load("https://image.tmdb.org/t/p/w400${movie.posterPath}")
-                        .into(binding.imgFilm)
-                    cardView.setOnClickListener{
-                        val bundle = Bundle().apply {
-                            putInt("ID", movie.id.toString().toInt())
-                        }
-                        it.findNavController().navigate(R.id.action_favoriteFragment_to_detailFragment, bundle)
+            binding.apply {
+                binding.filmfav = movie
+                Glide.with(itemView.context)
+                    .load("https://image.tmdb.org/t/p/w400${movie.posterPath}")
+                    .into(binding.imgFilm)
+                cardView.setOnClickListener{
+                    val bundle = Bundle().apply {
+                        putInt("ID", movie.id.toString().toInt())
                     }
+                    it.findNavController().navigate(R.id.action_favoriteFragment_to_detailFragment, bundle)
                 }
             }
 

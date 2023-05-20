@@ -1,21 +1,21 @@
+@file:Suppress("PrivatePropertyName")
+
 package com.dwiyu.ch5_moviedb.fragment
 
-import android.content.Intent
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.lifecycle.ViewModel
+import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.dwiyu.ch5_moviedb.R
 import com.dwiyu.ch5_moviedb.adapter.AdapterFav
 import com.dwiyu.ch5_moviedb.databinding.FragmentFavoriteBinding
 import com.dwiyu.ch5_moviedb.room.FavDB
 import com.dwiyu.ch5_moviedb.viewmodel.ViewModelFav
 import dagger.hilt.android.AndroidEntryPoint
 
+@Suppress("PrivatePropertyName")
 @AndroidEntryPoint
 class FavoriteFragment : Fragment() {
     private lateinit var viewModel: ViewModelFav
@@ -26,7 +26,7 @@ class FavoriteFragment : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         _binding = FragmentFavoriteBinding.inflate(inflater,container,false)
         return binding.root
 

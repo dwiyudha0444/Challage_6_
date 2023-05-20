@@ -1,5 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="EntryPointsManager">
+    <pattern value="com.dwiyu.ch5_moviedb.adapter.AdapterFilm" />
+    <pattern value="com.dwiyu.ch5_moviedb.adapter.AdapterFilm" method="AdapterFilm" />
+    <pattern value="com.dwiyu.ch5_moviedb.model.NowplayingMovie" />
+    <pattern value="com.dwiyu.ch5_moviedb.model.NowplayingMovie" method="NowplayingMovie" />
+    <pattern value="com.dwiyu.ch5_moviedb.adapter.AdapterFav" />
+    <pattern value="com.dwiyu.ch5_moviedb.adapter.AdapterFav" method="AdapterFav" />
+    <pattern value="com.dwiyu.ch5_moviedb.adapter.AdapterFav.ViewHolder" method="bindFilms" />
+    <pattern value="com.dwiyu.ch5_moviedb.room.DataFav" />
+    <pattern value="com.dwiyu.ch5_moviedb.room.DataFav" method="DataFav" />
+    <pattern value="com.dwiyu.ch5_moviedb.model.NowPlayingMovieResponse" />
+    <pattern value="com.dwiyu.ch5_moviedb.model.NowPlayingMovieResponse" method="NowPlayingMovieResponse" />
+    <pattern value="com.dwiyu.ch5_moviedb.adapter.AdapterFav.ViewHolder" />
+    <pattern value="com.dwiyu.ch5_moviedb.viewmodel.ViewModelFav" />
+    <pattern value="com.dwiyu.ch5_moviedb.viewmodel.ViewModelFav" method="ViewModelFav" />
+  </component>
   <component name="ExternalStorageConfigurationManager" enabled="true" />
   <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />

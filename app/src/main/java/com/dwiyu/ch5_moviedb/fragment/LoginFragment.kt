@@ -16,11 +16,11 @@ import dagger.hilt.android.AndroidEntryPoint
 class LoginFragment : Fragment() {
 
     lateinit var binding: FragmentLoginBinding
-    lateinit var firebaseAuth: FirebaseAuth
+    private lateinit var firebaseAuth: FirebaseAuth
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         binding = FragmentLoginBinding.inflate(inflater, container, false)
         return binding.root
     }
@@ -33,8 +33,8 @@ class LoginFragment : Fragment() {
             findNavController().navigate(R.id.action_loginFragment2_to_registerFragment)
         }
         binding.btnLogin.setOnClickListener {
-            var email = binding.etEmaillogin.text.toString()
-            var pass = binding.etPasswordlogin.text.toString()
+            val email = binding.etEmaillogin.text.toString()
+            val pass = binding.etPasswordlogin.text.toString()
 
             if (email.isNotEmpty() && pass.isNotEmpty()){
                 firebaseAuth.signInWithEmailAndPassword(email, pass).addOnCompleteListener{

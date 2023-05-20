@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!--suppress ALL -->
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -42,7 +43,9 @@
                 android:layout_height="50dp"
                 android:layout_toLeftOf="@id/iv_icprofile"
 
-                android:src="@drawable/ic_love" />
+                android:src="@drawable/ic_love"
+                android:contentDescription="TODO"
+                tools:ignore="ContentDescription,HardcodedText,RtlHardcoded" />
 
         </RelativeLayout>
 

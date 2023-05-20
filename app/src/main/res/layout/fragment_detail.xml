@@ -74,7 +74,8 @@
                                     android:layout_centerInParent="true"
                                     android:text="Rating :"
                                     android:textColor="@android:color/black"
-                                    android:textSize="14sp" />
+                                    android:textSize="14sp"
+                                    tools:ignore="HardcodedText" />
 
                                 <TextView
                                     android:id="@+id/tvRating"
@@ -147,7 +148,8 @@
                             android:text="Tanggal Rilis :"
                             android:textColor="@android:color/black"
                             android:textSize="14sp"
-                            android:textStyle="bold" />
+                            android:textStyle="bold"
+                            tools:ignore="HardcodedText" />
 
                         <TextView
                             android:id="@+id/tvRelease"
@@ -155,7 +157,8 @@
                             android:layout_height="wrap_content"
                             android:layout_below="@+id/tvRD"
                             android:text="Al"
-                            android:textSize="12sp" />
+                            android:textSize="12sp"
+                            tools:ignore="HardcodedText" />
 
                     </RelativeLayout>
 
@@ -171,7 +174,8 @@
                             android:text="Kepopuleran :"
                             android:textColor="@android:color/black"
                             android:textSize="14sp"
-                            android:textStyle="bold" />
+                            android:textStyle="bold"
+                            tools:ignore="HardcodedText" />
 
                         <TextView
                             android:id="@+id/tvKP"
@@ -194,7 +198,8 @@
                             android:text="STORYLINE :"
                             android:textColor="@android:color/black"
                             android:textSize="18sp"
-                            android:textStyle="bold" />
+                            android:textStyle="bold"
+                            tools:ignore="HardcodedText" />
 
                         <TextView
                             android:id="@+id/tvSin"
@@ -229,7 +234,8 @@
         android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="16dp"
-        tools:ignore="SpeakableTextPresentCheck">
+        tools:ignore="ContentDescription,HardcodedText,SpeakableTextPresentCheck"
+        android:contentDescription="TODO">
 
     </com.google.android.material.floatingactionbutton.FloatingActionButton>
 

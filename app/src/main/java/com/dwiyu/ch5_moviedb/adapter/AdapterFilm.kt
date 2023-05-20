@@ -10,7 +10,7 @@ import com.dwiyu.ch5_moviedb.R
 import com.dwiyu.ch5_moviedb.databinding.ItemFilmBinding
 import com.dwiyu.ch5_moviedb.model.NowPlayingMovieResponse
 
-class AdapterFilm (var listFilm: List<NowPlayingMovieResponse>):
+class AdapterFilm (private var listFilm: List<NowPlayingMovieResponse>):
     RecyclerView.Adapter<AdapterFilm.ViewHolder>() {
 
     class ViewHolder(var binding: ItemFilmBinding) : RecyclerView.ViewHolder(binding.root) {
@@ -25,7 +25,7 @@ class AdapterFilm (var listFilm: List<NowPlayingMovieResponse>):
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
-        var view = ItemFilmBinding.inflate(LayoutInflater.from(parent.context), parent, false)
+        val view = ItemFilmBinding.inflate(LayoutInflater.from(parent.context), parent, false)
         return ViewHolder(view)
     }
 

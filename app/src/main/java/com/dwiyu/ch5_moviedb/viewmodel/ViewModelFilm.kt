@@ -5,9 +5,7 @@ import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import com.dwiyu.ch5_moviedb.model.NowPlayingMovieResponse
 import com.dwiyu.ch5_moviedb.model.NowplayingMovie
-import com.dwiyu.ch5_moviedb.network.ApiClient
 import com.dwiyu.ch5_moviedb.network.ApiService
-import com.google.android.gms.common.api.Api
 import dagger.hilt.android.lifecycle.HiltViewModel
 import retrofit2.Call
 import retrofit2.Callback
